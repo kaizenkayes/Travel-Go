@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+html,
+body {
+  font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 80%;
+  max-width: 1380px;
+  margin: 2% auto;
+}
+.section-title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+.primary-btn{
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-title {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo-title span{
+    color: #FF5400;
+}
+.menu-bar{
+    display: none;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 20px;
+  font-weight: 400;
+}
+.menu-item .active {
+  color: #ff5400;
+}
+
+.banner {
+  width: 100%;
+  
+  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+
+  url(./Images/Group\ 13\ \(1\)\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  margin-top: 50px;
+  padding: 106px 0;
+}
+.banner-text-content{
+    text-align: center;
+}
+.banner-title{
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.banner-desc{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.banner-input{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+   background: rgba(255, 255, 255, 0.30);
+   margin: 64px 170px;
+   border-radius: 8px;
+   padding: 10px;
+   position: relative;
+}
+
+.banner-input input{
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 16px;
+    border: none;
+}
+.banner-input .img-1{
+    position: absolute;
+    right: 190px;
+}
+
+.banner-input .img-2{
+    position: absolute;
+    right: 400px;
+}
+.input-btn{
+    border: none;
+    background-color: #FF5400;
+    padding: 15px 30px ;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+
+
+/* Responsive part style start */
+@media screen and (max-width: 576px){
+    .menu-item {
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .logo-title {
+       font-size: 21px;
+    }
+    .logo img{
+        width: 28px;
+        height: 33px;
+    }
+
+    .banner{
+        padding: 20px 0px;
+        margin-top: 20px;
+    }
+
+    .banner-title{
+        margin: 10px 0;
+        font-size: 25px;
+    }
+
+    .banner-input{
+        flex-direction: column;
+        padding: 10px 80px ;
+        margin: 20px 40px;
+        position: relative;
+
+    }
+
+    .banner-input .img-1{
+        position: absolute;
+        top: 100px;
+        right: 30px;
+       
+    }
+
+    .banner-input .img-2{
+        position: absolute;
+        bottom: 90px;
+        right: 30px;
+    }
+    .input-btn{
+       height: 45px;
+       width: 185px
+    }
+     
+};
+    
