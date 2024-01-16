@@ -25,7 +25,7 @@ body {
 */
 .container {
   width: 80%;
-  max-width: 1380px;
+  max-width: 1280px;
   margin: 2% auto;
 }
 
@@ -620,6 +620,51 @@ span{
 * main part style end
 */
 
+
+/* 
+* footer part style start
+*/
+
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    height: 500px;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title-img{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    text-align: center;
+    display: grid;
+    gap: 30px;
+}
+.footer-icons{
+    border-bottom: 2px solid black;
+    margin: 0 200px;
+    padding-bottom: 30px;
+}
+.footer-icons > i{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.copy{
+    padding-top: 100px
+}
+
+
+
+
+
 /* Responsive part style start */
 @media screen and (max-width: 576px){
      
@@ -907,6 +952,34 @@ span{
     .save > h2 {
         font-size: 1.5rem;
     }
-   
-};
+
+
+
+
+
+    footer{
+        height: 400px;
+        margin-top: 40px;
+    }
     
+    .footer-title-img{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-container{
+      gap: 10px;
+    }
+    .footer-icons{
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .footer-icons > i{
+        margin-right: 20px;
+    }
+   .copy{
+    padding-top: 100px
+   }
+};
